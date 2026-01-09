@@ -267,6 +267,43 @@ section.mini-project .mini-project-box .btn-box {
   width: 100%;
 }
 
+section.certification img.cert-img {
+  max-width: 350px;
+  padding: 20px;
+  padding-top: 0;
+}
+section.certification .verify-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+section.publications {
+  background-color: #FEF2F4;
+}
+section.publications a.publich-btn.btn {
+  max-width: 202px;
+  margin-left: 0;
+}
+section.publications .publication-card {
+  background: rgba(255, 214, 236, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+  border: 1px solid #FF74B1;
+}
+section.publications .publication-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+section.publications .pub-label {
+  font-weight: 700;
+  color: #333;
+}
+section.publications .pub-text {
+  color: #555;
+}
+
 section.my-skill {
   background: #FEF2F4;
 }
@@ -430,6 +467,7 @@ section.contact .card i {
 @media (max-width: 767px) {
   section.mini-project .mini-project-box img.mini-img {
     max-width: 300px;
+    margin: 0 auto;
   }
   .heart {
     display: none;

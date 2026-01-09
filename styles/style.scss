@@ -367,6 +367,54 @@ section.mini-project {
     }
 }
 
+//certification
+section.certification {
+    img.cert-img {
+        max-width: 350px;
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .verify-link {
+        display: inline-block;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+}
+
+//Publications
+section.publications {
+    background-color: #FEF2F4;
+
+    a.publich-btn.btn {
+        max-width: 202px;
+        margin-left: 0;
+    }
+
+    .publication-card {
+        background: rgba(255, 214, 236, 0.3);
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        transition: all 0.25s ease;
+        border: 1px solid #FF74B1;
+    }
+
+    .publication-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    .pub-label {
+        font-weight: 700;
+        color: #333;
+    }
+
+    .pub-text {
+        color: #555;
+    }
+
+}
+
 // section 4
 section.my-skill {
     background: #FEF2F4;
@@ -588,6 +636,7 @@ section.contact {
 @media (max-width: 767px) {
     section.mini-project .mini-project-box img.mini-img {
         max-width: 300px;
+        margin: 0 auto;
     }
 
     .heart {
