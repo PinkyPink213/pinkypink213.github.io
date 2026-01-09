@@ -224,6 +224,68 @@ section.about-me .badge-dark {
     transform: scale(1.2) rotate(-15deg);
   }
 }
+section.work-exp {
+  background: #FEF2F4;
+  /* Timeline Wrapper */
+  /* Each Item */
+  /* Dot */
+  /* Content Box */
+  /* Fade-in Animation */
+  /* Delay for each item */
+}
+section.work-exp .timeline {
+  position: relative;
+  margin: 40px auto;
+  padding-left: 40px;
+  border-left: 3px solid #FF74B1;
+}
+section.work-exp .timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+section.work-exp .timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  height: 16px;
+  width: 16px;
+  background: #FF74B1;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #FF74B1;
+}
+section.work-exp .timeline-content {
+  background: #f9f9f9;
+  padding: 18px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+section.work-exp .timeline-date {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+section.work-exp .fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+section.work-exp .timeline-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+section.work-exp .timeline-item:nth-child(2) {
+  animation-delay: 0.25s;
+}
+section.work-exp .timeline-item:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
 section.my-thesis .my-system {
   width: 100%;
   height: 100%;
@@ -267,6 +329,9 @@ section.mini-project .mini-project-box .btn-box {
   width: 100%;
 }
 
+section.certification {
+  background: #FEF2F4;
+}
 section.certification img.cert-img {
   max-width: 350px;
   padding: 20px;
@@ -278,6 +343,9 @@ section.certification .verify-link {
   font-weight: 600;
 }
 
+section.publications {
+  background: #FEF2F4;
+}
 section.publications a.publich-btn.btn {
   max-width: 202px;
   margin-left: 0;
@@ -301,9 +369,6 @@ section.publications .pub-text {
   color: #555;
 }
 
-section.my-skill {
-  background: #FEF2F4;
-}
 section.my-skill .skill-set::before {
   font-family: "bootstrap-icons";
   content: "\f4b5";
