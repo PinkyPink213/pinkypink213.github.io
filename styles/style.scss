@@ -788,6 +788,16 @@ section.contact {
 
     }
 
+    section.cloud-project {
+        .mini-cloud-box {
+            padding: 20px 0;
+
+            .btn.btn-primary {
+                max-width: 100%;
+            }
+        }
+    }
+
     section.mini-project .mini-project-box {
         height: auto;
         max-width: 100%;

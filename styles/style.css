@@ -579,6 +579,12 @@ section.contact .card i {
   section.contact .card a {
     font-size: 18px;
   }
+  section.cloud-project .mini-cloud-box {
+    padding: 20px 0;
+  }
+  section.cloud-project .mini-cloud-box .btn.btn-primary {
+    max-width: 100%;
+  }
   section.mini-project .mini-project-box {
     height: auto;
     max-width: 100%;
