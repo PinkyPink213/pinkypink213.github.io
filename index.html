@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/sections.css">
   <script defer src="./script/script.js"></script>
 </head>
 <body>
@@ -29,7 +30,9 @@
       <a href="#work">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#project">AI Project</a>
+      <a href="#projects">Web Projects</a>
       <a href="#research">Research</a>
+      <a href="#certifications">Certifications</a>
       <a class="nav-cta" href="#contact">Let’s talk</a>
     </nav>
   </header>
@@ -170,9 +173,43 @@
       </div>
     </section>
 
+    <section class="past-projects section" id="projects">
+      <div class="section-heading reveal">
+        <div><div class="section-label">05 / Selected web projects</div><h2>Built before AI.<br><em>Still part of my story.</em></h2></div>
+        <p>A selection of customer-facing websites delivered during my software engineering career.</p>
+      </div>
+      <div class="project-grid">
+        <a class="web-project reveal" href="https://www.yasrebilaw.com/" target="_blank" rel="noreferrer">
+          <div class="web-project-image"><img src="./assets/work-project-img/yesarabi.png" alt="Yasrebi Law website"><span>Visit site ↗</span></div>
+          <div><h3>Yasrebi Law</h3><p>Responsive business website</p></div>
+        </a>
+        <a class="web-project reveal" href="https://www.avenuedentalplan.com/" target="_blank" rel="noreferrer">
+          <div class="web-project-image"><img src="./assets/work-project-img/avenuedental.png" alt="Avenue Dental Plan website"><span>Visit site ↗</span></div>
+          <div><h3>Avenue Dental Plan</h3><p>Healthcare membership website</p></div>
+        </a>
+        <a class="web-project reveal" href="https://www.kamikazemusic2020.com/" target="_blank" rel="noreferrer">
+          <div class="web-project-image"><img src="./assets/work-project-img/kamikaze.png" alt="Kamikaze Music website"><span>Visit site ↗</span></div>
+          <div><h3>Kamikaze Music</h3><p>Entertainment and artist website</p></div>
+        </a>
+        <a class="web-project reveal" href="https://www.rsfriends.com/" target="_blank" rel="noreferrer">
+          <div class="web-project-image"><img src="./assets/work-project-img/rsfriend.png" alt="RS Friends website"><span>Visit site ↗</span></div>
+          <div><h3>RS Friends</h3><p>Corporate community platform</p></div>
+        </a>
+        <a class="web-project reveal" href="https://www.autocut.co.uk/" target="_blank" rel="noreferrer">
+          <div class="web-project-image"><img src="./assets/work-project-img/autocut.png" alt="Autocut website"><span>Visit site ↗</span></div>
+          <div><h3>Autocut</h3><p>Automotive services website</p></div>
+        </a>
+        <a class="web-project reveal" href="https://www.gosimplex.com/" target="_blank" rel="noreferrer">
+          <div class="web-project-image"><img src="./assets/work-project-img/simplex.png" alt="Simplex website"><span>Visit site ↗</span></div>
+          <div><h3>Simplex</h3><p>Technology services website</p></div>
+        </a>
+      </div>
+      <p class="archive-note reveal">Additional work includes Cactus, FirstTrust Home Loans, JabberComm, Protec, RSiam, and other production websites.</p>
+    </section>
+
     <section class="research section" id="research">
       <div class="section-heading reveal">
-        <div><div class="section-label">05 / Research</div><h2>Research that<br>connects the dots.</h2></div>
+        <div><div class="section-label">06 / Research</div><h2>Research that<br>connects the dots.</h2></div>
         <p>Graph learning applied to a real environmental forecasting problem.</p>
       </div>
       <article class="paper reveal">
@@ -181,9 +218,30 @@
         <p>A hybrid DCRNN–GraphSAGE model for learning spatio-temporal dependencies and improving 24-hour multistep air-quality forecasting.</p>
         <a href="https://link.springer.com/chapter/10.1007/978-981-96-6291-3_1" target="_blank" rel="noreferrer">Read the publication <span>↗</span></a>
       </article>
-      <div class="credentials reveal">
-        <div><span>Credential 01</span><h3>AWS Solutions Architect — Associate</h3><a href="https://www.credly.com/badges/2f9c76af-0014-42af-8b6e-007ee4116517/public_url" target="_blank" rel="noreferrer">Verify ↗</a></div>
-        <div><span>Credential 02</span><h3>Certified Kubernetes Administrator</h3><a href="https://www.credly.com/badges/6ff27141-3895-445c-8af2-27c8fe86261a/public_url" target="_blank" rel="noreferrer">Verify ↗</a></div>
+    </section>
+
+    <section class="certifications section" id="certifications">
+      <div class="section-heading reveal">
+        <div><div class="section-label">07 / Certifications</div><h2>Validated cloud<br>& platform skills.</h2></div>
+        <p>Industry credentials supporting my ability to build and operate reliable AI systems.</p>
+      </div>
+      <div class="cert-grid">
+        <article class="cert-card reveal">
+          <span class="cert-number">01</span>
+          <div class="cert-mark">AWS</div>
+          <p>Amazon Web Services</p>
+          <h3>AWS Certified Solutions Architect — Associate</h3>
+          <div class="cert-focus"><span>Cloud architecture</span><span>Security</span><span>Scalability</span></div>
+          <a href="https://www.credly.com/badges/2f9c76af-0014-42af-8b6e-007ee4116517/public_url" target="_blank" rel="noreferrer">Verify credential ↗</a>
+        </article>
+        <article class="cert-card dark reveal">
+          <span class="cert-number">02</span>
+          <div class="cert-mark">CKA</div>
+          <p>The Linux Foundation · CNCF</p>
+          <h3>Certified Kubernetes Administrator</h3>
+          <div class="cert-focus"><span>Kubernetes</span><span>Networking</span><span>Troubleshooting</span></div>
+          <a href="https://www.credly.com/badges/6ff27141-3895-445c-8af2-27c8fe86261a/public_url" target="_blank" rel="noreferrer">Verify credential ↗</a>
+        </article>
       </div>
     </section>
 
