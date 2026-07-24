@@ -1,37 +1,28 @@
-var scrollToTopBtn = document.getElementById('up-button');
-var rootElement = document.documentElement;
+const menuButton = document.querySelector('.menu-button');
+const nav = document.querySelector('#site-nav');
 
-function scrollToTop() {
-	// Scroll to top logic
-	rootElement.scrollTo({
-		top: 0,
-		behavior: 'smooth',
-	});
-}
-scrollToTopBtn.addEventListener('click', scrollToTop);
+menuButton?.addEventListener('click', () => {
+  const isOpen = nav.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(isOpen));
+  document.body.classList.toggle('menu-open', isOpen);
+});
 
-scrollToTopBtn.style.display = 'none'; //by default should be hidden
-document.querySelector('body').onscroll = function () {
-	//whenever they scroll
-	if (window.scrollY > 150)
-		//if scroll is 150px from top
-		scrollToTopBtn.style.display = 'block'; //if they scroll down, show
-	else scrollToTopBtn.style.display = 'none'; //if they scroll up, hide
-};
+nav?.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    menuButton?.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
+  });
+});
 
-const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
 
-const revealOnScroll = () => {
-	for (let i = 0; i < reveals.length; i++) {
-		const windowHeight = window.innerHeight;
-		const elementTop = reveals[i].getBoundingClientRect().top;
-		const visiblePoint = 80;
-
-		if (elementTop < windowHeight - visiblePoint) {
-			reveals[i].classList.add('active');
-		}
-	}
-};
-
-window.addEventListener('scroll', revealOnScroll);
-revealOnScroll();
+document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+document.querySelector('#year').textContent = new Date().getFullYear();

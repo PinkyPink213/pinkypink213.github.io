@@ -1,940 +1,202 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- Primary Meta Tags -->
-	<title>Pink Web Portfolio</title>
-	<meta name="title" content="Pink Web Portfolio" />
-	<meta name="description" content="All About Pink Project " />
-
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://pinkypink213.github.io/" />
-	<meta property="og:title" content="Pink Web Portfolio" />
-	<meta property="og:description" content="All About Pink Project " />
-	<meta property="og:image" content="./assets/other/web_portfolio.png" />
-
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://pinkypink213.github.io/" />
-	<meta property="twitter:title" content="Pink Web Portfolio" />
-	<meta property="twitter:description" content="All About Pink Project " />
-	<meta property="twitter:image" content="./assets/other/web_portfolio.png" />
-
-	<!-- Meta Tags Generated with https://metatags.io -->
-	<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png" />
-	<link rel="manifest" href="./assets/favicon_io/site.webmanifest" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-	<link rel="stylesheet" href="./styles/style.css" />
-	<title>Pink Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <title>Pink — AI & Software Engineer</title>
+  <meta name="description" content="Portfolio of Isariya “Pink” Sirivejabandhu — AI and software engineer building production-ready RAG, agentic AI, and web systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pinkypink213.github.io/">
+  <meta property="og:title" content="Pink — AI & Software Engineer">
+  <meta property="og:description" content="Production-minded AI systems, thoughtful software, and reliable infrastructure.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/PinkyPink213/AI-Document-Assistant/main/img/app-dark-them.png">
+  <link rel="icon" href="./assets/favicon_io/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script defer src="./script/script.js"></script>
 </head>
-
 <body>
-	<nav class="navbar navbar-expand-xl navbar-dark">
-		<div class="container-fluid d-flex jusitfy-content-between">
-			<img class="header-logo" src="./assets/icon/icon2.png" alt="logo" />
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-				<div class="navbar-nav">
-					<a class="nav-link" href="#about">About Me</a>
-					<a class="nav-link" href="#work-exp">Work Experience</a>
-					<a class="nav-link" href="#skill">Skill</a>
-					<a class="nav-link" href="#cert">Certification</a>
-					<a class="nav-link" href="#thesis">Thesis</a>
-					<a class="nav-link" href="#publications">Publication</a>
-					<a class="nav-link" href="#cloud-project">Cloud Project</a>
-					<a class="nav-link" href="#ai-pj">AI Project</a>
-					<a class="nav-link" href="#wp">Work Project</a>
-					<a class="nav-link" href="#contact">Contact</a>
-				</div>
-			</div>
-		</div>
-	</nav>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Pink, home"><span>P</span>INK.</a>
+    <button class="menu-button" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span><span class="sr-only">Menu</span>
+    </button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#work">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#project">AI Project</a>
+      <a href="#research">Research</a>
+      <a class="nav-cta" href="#contact">Let’s talk</a>
+    </nav>
+  </header>
 
-	<section class="hero-sec d-flex justify-content-center align-items-center flex-wrap" id="hero-sec">
-		<div class="container">
-			<div class="row d-flex text-center flex-wrap align-items-center">
-				<div class="col-12">
-					<div class="heart-box">
-						<h1>Hello I'm Pink</h1>
-						<div class="heart"></div>
-					</div>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Available for AI engineering opportunities</p>
+        <h1>I build AI that<br><em>works in the real world.</em></h1>
+        <p class="hero-intro">Hi, I’m Pink — an AI & Software Engineer turning complex LLM ideas into useful, reliable products.</p>
+        <div class="actions">
+          <a class="button primary" href="#project">See my featured work <span>↘</span></a>
+          <a class="button ghost" href="./assets/other/Resume - Isariya (Software Engineer).pdf" download>Download résumé</a>
+        </div>
+      </div>
+      <div class="hero-side reveal">
+        <div class="code-card">
+          <div class="code-top"><span></span><span></span><span></span><small>pink.ai</small></div>
+          <pre><code><b>class</b> <i>Pink</i>(Engineer):
+  focus = [
+    <strong>"agentic AI"</strong>,
+    <strong>"production RAG"</strong>,
+    <strong>"reliable systems"</strong>
+  ]
 
-					<!-- <h2>Software Engineer</h2> -->
-					<div class="btn-box d-flex flex-wrap justify-content-center">
-						<a class="btn btn-primary" href="./assets/other/Resume - Isariya (Software Engineer).pdf"
-							role="button" download>Resume</a>
-						<a class="btn btn-primary" href="https://github.com/PinkyPink213" role="button"
-							target="_blank">GitHub</a>
-						<a class="btn btn-primary" href="#contact" role="button">Contact Info</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="about-me" id="about">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-12">
-					<p class="sub-title">Get To Know More</p>
-					<h2>About Me</h2>
-				</div>
-				<div class="col-12">
-					<div class="my-box d-flex align-items-center justify-content-center flex-wrap">
-						<div class="me-img">
-							<img src="./assets/other/profile1.jpg" class="pink-profile" alt="pink-profile" />
-						</div>
-						<div class="intro-text d-flex flex-column justify-content-center flex-wrap">
-							<div class="intro-box text-start">
-								<p class="m-0">
-									My name is Isariya Sirivejabandhu, but you can call me
-									<em class="p-text">Pink</em>. I am a Software Engineer with 4+ years of experience in web development and system support, with practical experience in cloud infrastructure,
-									DevOps workflows, and containerized environments. Experienced in collaborating with cross-functional teams to
-									support scalable and reliable systems, and motivated to grow
-									into a Cloud or Platform Engineering role
-								</p>
-							</div>
-							<div class="intro-box text-start">
-								<h5>My Education</h5>
-								<div class="text-start edu-1">
-									<p class="card-text fw-bold m-0">
-										Kasetsart University, Thailand
-									</p>
-									<p class="m-0">2014 - 2018</p>
-									<p>Bachelor of Science in Computer Science</p>
-								</div>
-								<div class="text-start edu-1">
-									<p class="card-text fw-bold m-0">
-										National Central University, Taiwan
-									</p>
-									<p class="m-0">2021 - 2023 | GPA 4.00</p>
-									<p class="m-0">
-										Master of Computer Science and Information Engineering
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="work-exp" id="work-exp">
-		<div class="container">
-			<div class="row mb-4">
-				<div class="col-12 text-center">
-					<p class="sub-title">Checkout My</p>
-					<h2>Work Experience</h2>
-				</div>
-			</div>
+  <b>def</b> build(self, idea):
+    <b>return</b> idea.to_product()</code></pre>
+        </div>
+        <div class="floating-note">LLMs + thoughtful engineering <span>✦</span></div>
+      </div>
+      <a class="scroll-cue" href="#about">Scroll to explore <span>↓</span></a>
+    </section>
 
-			<div class="timeline">
-				<!-- Ticketmaster -->
-				<div class="timeline-item fade-in">
-					<div class="timeline-dot"></div>
-					<div class="timeline-content">
-						<h4>Software Engineer — Ticketmaster</h4>
-						<p class="timeline-date">Jun 2024 – Dec 2025</p>
-						<ul>
-							<li>
-								Developed and maintained frontend and backend features for
-								Ticketmaster platforms across Southeast Asia, including
-								Singapore, Thailand, and the Philippines, using PHP (Yii
-								Framework), JavaScript, HTML, CSS, Bootstrap, SQL, and AWS.
-							</li>
-							<li>
-								Improved engineering team productivity by leading tool
-								transitions from Redmine → Asana → Jira, including board
-								setup, workflow rules, automations, Agile processes, and
-								Confluence documentation.
-							</li>
-							<li>
-								Designed and implemented Slack bot integrations for Jira using
-								Node.js, AWS Lambda, API Gateway, with automated deployments
-								via GitLab CI/CD and Terraform.
-							</li>
-							<li>
-								Migrated infrastructure to Amazon EKS Auto Mode, managed
-								internal services (e.g., Gitea) using Argo CD, and deployed
-								Helm-based applications following GitOps best practices.
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- RS -->
-				<div class="timeline-item fade-in">
-					<div class="timeline-dot"></div>
-					<div class="timeline-content">
-						<h4>Software Engineer — RS Public Company Limited</h4>
-						<p class="timeline-date">Sep 2020 – Dec 2021</p>
-						<ul>
-							<li>
-								Built and maintained WordPress websites with custom themes and
-								basic SEO optimization.
-							</li>
-							<li>
-								Resolved production issues to ensure system stability and
-								on-time delivery.
-							</li>
-							<li>
-								Collaborated with designers and developers to deliver
-								user-friendly, high-quality websites.
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- Pronto -->
-				<div class="timeline-item fade-in">
-					<div class="timeline-dot"></div>
-					<div class="timeline-content">
-						<h4>Software Engineer — Pronto Marketing</h4>
-						<p class="timeline-date">May 2019 – Aug 2020</p>
-						<ul>
-							<li>
-								Developed responsive WordPress websites using HTML, CSS,
-								JavaScript, and PHP.
-							</li>
-							<li>
-								Collaborated with cross-functional teams in an Agile
-								environment to deliver high-quality web solutions.
-							</li>
-							<li>
-								Provided technical support and mentored new hires on web
-								technologies and best practices.
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="my-skill text-center" id="skill">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<p class="sub-title">More About My</p>
-					<h2>Skill</h2>
-					<!-- <div
-							class="skill-box d-flex justify-content-center align-items-center flex-wrap"
-						>
-							<div class="skill-set">
-								<p class="main-skill">javascript</p>
-								<p class="skill-level">Intermediate</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">Wordpress</p>
-								<p class="skill-level">intermediate</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">Tensorflow</p>
-								<p class="skill-level">Advance</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">Python</p>
-								<p class="skill-level">Advanced</p>
-							</div>
-
-							<div class="skill-set">
-								<p class="main-skill">PHP</p>
-								<p class="skill-level">Basic</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">Pytorch</p>
-								<p class="skill-level">Basic</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">React.js</p>
-								<p class="skill-level">Basic</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">HTML</p>
-								<p class="skill-level">Intermediate</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">Deep Learning</p>
-								<p class="skill-level">intermediate</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">Node.js</p>
-								<p class="skill-level">Advance</p>
-							</div>
-
-							<div class="skill-set">
-								<p class="main-skill">CSS</p>
-								<p class="skill-level">Basic</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">SASS/SCSS</p>
-								<p class="skill-level">Basic</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">Express.js</p>
-								<p class="skill-level">Basic</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">jQuery</p>
-								<p class="skill-level">Intermediate</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">SQL</p>
-								<p class="skill-level">intermediate</p>
-							</div>
-
-							<div class="skill-set">
-								<p class="main-skill">MongoDB</p>
-								<p class="skill-level">Basic</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">Bootstrap</p>
-								<p class="skill-level">Basic</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">GIT</p>
-								<p class="skill-level">Basic</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">Kubernetes</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">AWS</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">Docker</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">Terraform</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">Helm</p>
-							</div>
-							<div class="skill-set">
-								<p class="main-skill">ArgoCD</p>
-							</div>
-						</div>
-					</div> -->
-					<div class="col-12">
-						<div class="skill-box">
-							<h5>Software & Web Development</h5>
-							<div class="d-flex flex-wrap justify-content-between">
-								<div class="skill-set">
-									<p class="main-skill">javascript</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">Python</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">React.js</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">Node.js</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">Wordpress</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">PHP</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">Yii</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">HTML</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">CSS</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">Bootstrap</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">NoSQL</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">SQL</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">LESS</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">sass/scss</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">jquery</p>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="skill-box">
-							<h5>AI & Machine Learning</h5>
-							<div class="d-flex flex-wrap justify-content-between">
-								<div class="skill-set">
-									<p class="main-skill">Tensorflow</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">Pytorch</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">Deep learning</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">Langchain</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">LangGraph</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">RAG</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">LLM</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-12">
-						<div class="skill-box">
-							<h5>Cloud & DevOps</h5>
-							<div class="d-flex flex-wrap justify-content-between">
-								<div class="skill-set">
-									<p class="main-skill">Kubernetes</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">AWS</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">Docker</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">Terraform</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">Helm</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">ArgoCD</p>
-								</div>
-								<div class="skill-set">
-									<p class="main-skill">GIT</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-	</section>
-
-	<section class="certification" id="cert">
-	<div class="container">
-		<div class="row mb-5">
-			<div class="col-12 text-center">
-				<p class="sub-title">Dive Into My</p>
-				<h2>Certifications</h2>
-			</div>
-		</div>
-
-		<!-- AWS SAA -->
-		<div class="row justify-content-center mb-5">
-			<div class="col-lg-10">
-				<div class="cert-card">
-					<div class="row align-items-center">
-						<div class="col-md-4 text-center">
-							<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2f9c76af-0014-42af-8b6e-007ee4116517" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-						</div>
-						<div class="col-md-8">
-							<h5>AWS Certified Solutions Architect – Associate</h5>
-							<p><strong>Issued By:</strong> Amazon Web Services</p>
-							<p>
-								<strong>Focus Areas:</strong> Cloud Architecture, High Availability,
-								Security, VPC Design, Scalable Deployments, Cost Optimization
-							</p>
-							<p class="mb-3">
-								Designed and deployed scalable, fault-tolerant AWS architectures.
-								Hands-on with EC2, S3, IAM, RDS, VPC, CloudFront, and CloudWatch,
-								with strong emphasis on security and cost efficiency.
-							</p>
-							<a
-								href="https://www.credly.com/badges/2f9c76af-0014-42af-8b6e-007ee4116517/public_url"
-								target="_blank"
-								class="verify-link">
-								Verify Credential →
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- CKA -->
-		<div class="row justify-content-center">
-			<div class="col-lg-10">
-				<div class="cert-card">
-					<div class="row align-items-center">
-						<div class="col-md-4 text-center">
-							<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6ff27141-3895-445c-8af2-27c8fe86261a" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-						</div>
-						<div class="col-md-8">
-							<h5>Certified Kubernetes Administrator (CKA)</h5>
-							<p><strong>Issued By:</strong> The Linux Foundation (CNCF)</p>
-							<p>
-								<strong>Focus Areas:</strong> Cluster Architecture, Workloads &
-								Scheduling, Networking, Storage, Troubleshooting
-							</p>
-							<p class="mb-3">
-								Managed production-grade Kubernetes clusters. Configured
-								workloads, ingress, services, and persistent storage.
-								Developed strong troubleshooting skills across cluster,
-								node, and application layers.
-							</p>
-							<a
-								href="https://www.credly.com/badges/6ff27141-3895-445c-8af2-27c8fe86261a/public_url"
-								target="_blank"
-								class="verify-link">
-								Verify Credential →
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-</section>
-
-		</div>
-	</section>
-	<section class="my-thesis" id="thesis">
-		<div class="container">
-			<div class="row mb-4">
-				<div class="col-12 text-center">
-					<p class="sub-title">Take a look at My</p>
-					<h2>Thesis</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xl-6 col-12 text-center">
-					<img src="./assets/other/SystemArc.png" alt="system" class="my-system" />
-				</div>
-				<div class="col-xl-6 col-12 text-start">
-					<p class="thesis-topic m-0">
-						<strong>Thesis Topic:</strong> A Graph-base Approach for PM2.5
-						Prediction
-					</p>
-					<p class="thesis-topic m-0">
-						<strong>Supervisor:</strong> Professor Min-Te Sun
-					</p>
-					<p class="thesis-topic m-0">
-						<strong>Mainly About:</strong> Spatio-Temporal Problem, Timeseries
-						Forecasting, Graph-based model, PM2.5 Prediction, Deep Learning
-					</p>
-					<p class="thesis-topic m-0"><strong>Project Detail:</strong></p>
-					<p class="m-0">
-						We proposed a PM2.5 prediction system that includes data
-						preprocessing, data fusion, feature engineering, feature
-						selection, and the proposed prediction model, DCRNN-GS. The
-						DCRNN-GS model combines the strengths of DCRNN, which has the
-						ability to capture spatio-temporal dependencies in sequential
-						data, and GraphSAGE, which is capable of learning meaningful
-						information for each node in the graph. We achieved a significant
-						5.66% MSE improvement compared to state-of-the-art approaches,
-						highlighting its superior performance in forecasting for iterative
-						multistep prediction for the next 24 hours based on the past 24
-						hours of data.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="publications" id="publications">
-		<div class="container">
-			<div class="row mb-4">
-				<div class="col-12 text-center">
-					<p class="sub-title">Discover My</p>
-					<h2>Publication</h2>
-				</div>
-			</div>
-
-			<div class="row d-flex justify-content-center">
-				<div class="col-xl-8 col-12">
-					<div class="publication-card p-4">
-						<p class="m-0">
-							<span class="pub-label">Title:</span>
-							<span class="pub-text">A Graph-based System for PM2.5 Prediction</span>
-						</p>
-
-						<p class="m-0 mt-2">
-							<span class="pub-label">Published In:</span>
-							<span class="pub-text">I-SPAN Ubi-Media 2025, Springer CCIS Vol. 2380,
-								Singapore</span>
-						</p>
-						<p class="m-0 mt-3"><strong>Overview:</strong></p>
-						<p class="m-0">
-							Proposed an end-to-end PM2.5 forecasting system using
-							graph-based learning, integrating spatio-temporal features, data
-							preprocessing, and a hybrid DCRNN–GraphSAGE model (DCRNN-GS).
-							Demonstrated improved prediction performance for iterative
-							multistep forecasting across 24-hour horizons.
-						</p>
-						<a href="https://link.springer.com/chapter/10.1007/978-981-96-6291-3_1" target="_blank"
-							class="publich-btn btn btn-primary d-inline-block mt-3">
-							View Publication →
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="cloud-project" id="cloud-project">
-		<div class="container">
-
-		<div class="row text-center">
-			<div class="col-12">
-				<p class="sub-title">Explore My</p>
-				<h2>Cloud Projects</h2>
-				<p style="max-width: 700px; margin: 0 auto; margin-top: 10px; color: #555;">
-					Real-world cloud architectures designed and built with AWS services, following
-					serverless best practices, infrastructure-as-code, and production-ready patterns.
-				</p>
-			</div>
-		</div>
-
-		<div class="mini-cloud-box row d-flex justify-content-center align-items-center flex-wrap mt-4">
-			<div class="col-lg-6 col-12">
-				<img src="./assets/other/system-architecture.png"
-						alt="cloud-project-img"
-						class="mini-img" />
-			</div>
-			<div class="col-lg-6 col-12">
-				<div class="mini-project-box pt-4">
-
-					<h3 class="text-center" >
-						Serverless Todo List API
-					</h3>
-
-					<p>
-						End-to-end serverless application using AWS Lambda, API Gateway, DynamoDB,
-						S3, CloudFront, and GitHub Actions for CI/CD. Built with fully automated IaC using Terraform.
-					</p>
-
-					<!-- ✔ Tech Stack Badges -->
-					<div class="badage-box d-flex flex-wrap mb-3">
-						<span class="badge">AWS Lambda</span>
-						<span class="badge">API Gateway</span>
-						<span class="badge">DynamoDB</span>
-						<span class="badge">S3</span>
-						<span class="badge">Bootstrap</span>
-						<span class="badge">HTML</span>
-						<span class="badge">Terraform</span>
-						<span class="badge">GitHub Actions</span>
-						<span class="badge">Node.js</span>
-						<span class="badge">CSS</span>
-					</div>
-
-
-					<!-- Key Features -->
-					<h4>🧩 Key Features</h4>
-					<ul>
-						<li>Fully serverless backend with AWS Lambda</li>
-						<li>REST API via API Gateway (GET, POST, PUT, DELETE)</li>
-						<li>DynamoDB for fast, scalable NoSQL data storage</li>
-						<li>S3 Static Website Hosting</li>
-						<li>IAM roles with least-privilege architecture</li>
-						<li>CI/CD pipeline using GitHub Actions</li>
-						<li>Complete IaC provisioning with Terraform</li>
-					</ul>
-
-					<div class="btn-box d-flex justify-content-center justify-content-sm-start align-items-center flex-wrap">
-						<a class="btn btn-primary" href="https://github.com/PinkyPink213/TodoList"
-							role="button" target="_blank">GitHub</a>
-
-						<a class="btn btn-primary" href="http://todolist-web-frontend.s3-website-ap-southeast-1.amazonaws.com/"
-							role="button" target="_blank">Live Demo</a>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		</div>
-	</section>
-
-	<section class="mini-project" id="ai-pj">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-12">
-					<p class="sub-title">Explore My</p>
-					<h2>AI Project</h2>
-				</div>
-			</div>
-			<div class="row d-flex justify-content-center flex-wrap">
-				<div class="col-sm-6 col-12">
-					<div class="mini-project-box text-center d-flex flex-column justify-content-center">
-						<img src="./assets/mini-project-img/book-app.png" alt="mini-project-img" class="mini-img" />
-						<h3>Book Recommender System</h3>
-						<div class="badage-box d-flex flex-wrap justify-content-center">
-							<span class="badge">LangChain</span>
-							<span class="badge">RAG</span>
-							<span class="badge">Python</span>
-							<span class="badge">OpenAI API</span>
-							<span class="badge">Gradio</span>
-							<span class="badge">Docker</span>
-							<span class="badge">ChromaDB</span>
-						</div>
-						<div class="btn-box d-flex justify-content-center align-items-center flex-wrap">
-							<a class="btn btn-primary" href="https://github.com/PinkyPink213/book-recommender-system"
-								role="button" target="_blank">GitHub</a>
-							<a class="btn btn-primary" href="https://huggingface.co/spaces/Isariya/book-recommender-system" role="button"
-								target="_blank">Live Demo</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-12">
-					<div class="mini-project-box text-center d-flex flex-column justify-content-center">
-						<img src="./assets/mini-project-img/pdf_chat.png" alt="mini-project-img" class="mini-img" />
-						<h3>PDF QA AGENT</h3>
-						<div class="badage-box d-flex flex-wrap justify-content-center">
-							<span class="badge">Python</span>
-							<span class="badge">LangChain</span>
-							<span class="badge">LangGraph</span>
-							<span class="badge">RAG</span>
-							<span class="badge">QDRANT</span>
-							<span class="badge">REDIS</span>
-							<span class="badge">DOCKER</span>
-						</div>
-						<div class="btn-box d-flex justify-content-center align-items-center flex-wrap">
-							<a class="btn btn-primary" href="https://github.com/PinkyPink213/PDF-QA-Chat-Agent-AI" role="button"
-								target="_blank">GitHub</a>
-							<a class="btn btn-primary" href="#" role="button"
-								target="_blank">Live Demo</a>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<section class="work-project" id="wp">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-12">
-					<p class="m-0 sub-title">Browse My Recent</p>
-					<h2>Work Project</h2>
-					<div class="tag d-flex justify-content-center flex-wrap">
-						<span class="badge bg-dark">LESS</span>
-						<span class="badge bg-dark">CSS</span>
-						<span class="badge bg-dark">HTML</span>
-						<span class="badge bg-dark">JAVASCRIPT</span>
-						<span class="badge bg-dark">JQUERY</span>
-						<span class="badge bg-dark">PHP</span>
-						<span class="badge bg-dark">BOOTSTRAP</span>
-						<span class="badge bg-dark">WORDPRESS</span>
-					</div>
-				</div>
-			</div>
-			<div class="row project-row">
-				<div class="col-md-4 col-sm-6">
-					<div class="card">
-						<div class="front">
-							<img class="card-img-top" src="./assets/work-project-img/yesarabi.png"
-								alt="yesarabi-website" />
-						</div>
-						<div class="back">
-							<a class="btn btn-primary btn-custom card-link" target="_blank"
-								href="https://www.yasrebilaw.com/">Visit Site</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="card">
-						<div class="front">
-							<img class="card-img-top" src="./assets/work-project-img/avenuedental.png"
-								alt="avenuedental-website" />
-						</div>
-						<div class="back">
-							<a class="btn btn-primary btn-custom card-link" target="_blank"
-								href="https://www.avenuedentalplan.com/">Visit Site</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="card">
-						<div class="front">
-							<img class="card-img-top new-img"" src=" ./assets/work-project-img/kamikaze.png"
-								alt="yesarabi-website" />
-						</div>
-						<div class="back">
-							<a class="btn btn-primary btn-custom card-link" target="_blank"
-								href="https://www.kamikazemusic2020.com/">Visit Site</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="card">
-						<div class="front">
-							<img class="card-img-top new-img"" src=" ./assets/work-project-img/rsfriend.png"
-								alt="yesarabi-website" />
-						</div>
-						<div class="back">
-							<a class="btn btn-primary btn-custom card-link" target="_blank"
-								href="https://www.rsfriends.com/">Visit Site</a>
-						</div>
-					</div>
-				</div>
-				<!-- <div class="col-md-4 col-sm-6">
-          <div class="card">
-            <div class="front">
-              <img class="card-img-top new-img" src="./assets/work-project-img/rsiam.png" alt="yesarabi-website" />
-            </div>
-            <div class="back">
-              <a class="btn btn-primary btn-custom card-link" target="_blank" href="https://www.rsiamonline.com/">Visit
-                Site</a>
-            </div>
+    <section class="intro section" id="about">
+      <div class="section-label">01 / About</div>
+      <div class="intro-grid">
+        <h2 class="reveal">Curious mind.<br>Production mindset.</h2>
+        <div class="intro-body reveal">
+          <p class="lead">I’m Isariya Sirivejabandhu — call me <strong>Pink</strong>. I bridge AI experimentation and dependable software engineering.</p>
+          <p>My background spans full-stack development, cloud infrastructure, DevOps, and applied machine learning. Today, I focus on LLM applications: retrieval pipelines, agent workflows, evaluation, observability, and the product details that make AI genuinely useful.</p>
+          <div class="quick-facts">
+            <div><strong>4+</strong><span>Years in software</span></div>
+            <div><strong>M.Sc.</strong><span>Computer Science</span></div>
+            <div><strong>2</strong><span>Cloud certifications</span></div>
           </div>
-        </div> -->
+        </div>
+      </div>
+    </section>
 
-				<div class="col-md-4 col-sm-6">
-					<div class="card">
-						<div class="front">
-							<img class="card-img-top" src="./assets/work-project-img/autocut.png"
-								alt="autocut-website" />
-						</div>
-						<div class="back">
-							<a class="btn btn-primary btn-custom card-link" target="_blank"
-								href="https://www.autocut.co.uk/">Visit Site</a>
-						</div>
-					</div>
-				</div>
+    <section class="experience section" id="work">
+      <div class="section-heading reveal">
+        <div><div class="section-label">02 / Experience</div><h2>Where I’ve made<br>things happen.</h2></div>
+        <p>From customer-facing platforms to cloud automation and AI systems.</p>
+      </div>
+      <div class="timeline">
+        <article class="role reveal">
+          <div class="role-date">2024 — 2025</div>
+          <div><h3>Software Engineer</h3><p class="company">Ticketmaster · Southeast Asia</p></div>
+          <p>Built and maintained regional platform features, automated Jira workflows with AWS serverless services, and helped migrate internal infrastructure to EKS Auto Mode with Terraform, Helm, and Argo CD.</p>
+        </article>
+        <article class="role reveal">
+          <div class="role-date">2020 — 2021</div>
+          <div><h3>Software Engineer</h3><p class="company">RS Public Company Limited</p></div>
+          <p>Delivered and supported responsive digital experiences, partnering with designers and engineers to ship stable, user-friendly websites.</p>
+        </article>
+        <article class="role reveal">
+          <div class="role-date">2019 — 2020</div>
+          <div><h3>Software Engineer</h3><p class="company">Pronto Marketing</p></div>
+          <p>Developed responsive web solutions, resolved production issues, and mentored new team members on web engineering practices.</p>
+        </article>
+      </div>
+    </section>
 
-				<div class="col-md-4 col-sm-6">
-					<div class="card">
-						<div class="front">
-							<img class="card-img-top" src="./assets/work-project-img/simplex.png"
-								alt="simplex-website" />
-						</div>
-						<div class="back">
-							<a class="btn btn-primary btn-custom card-link" target="_blank"
-								href="https://www.gosimplex.com/">Visit Site</a>
-						</div>
-					</div>
-				</div>
+    <section class="skills section" id="skills">
+      <div class="section-label">03 / Capabilities</div>
+      <div class="skills-title reveal"><h2>My AI toolkit,<br><em>without the buzzwords.</em></h2><p>Skills I use to move from a promising prototype to an observable, tested, production-ready application.</p></div>
+      <div class="skill-grid">
+        <article class="skill-card featured reveal">
+          <span class="skill-num">01</span><span class="skill-icon">✦</span>
+          <h3>LLM & Agent Engineering</h3>
+          <p>Designing tool-using agents, durable workflows, prompt systems, and human approval loops.</p>
+          <div class="tags"><span>LangChain</span><span>LangGraph</span><span>OpenAI API</span><span>Tool Calling</span><span>HITL</span></div>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-num">02</span><span class="skill-icon">⌁</span>
+          <h3>Retrieval & RAG</h3>
+          <p>Conversation-scoped search, metadata filtering, reranking, citations, and retrieval evaluation.</p>
+          <div class="tags"><span>RAG</span><span>Qdrant</span><span>Embeddings</span><span>Reranking</span><span>Vector Search</span></div>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-num">03</span><span class="skill-icon">◎</span>
+          <h3>Evaluation & Observability</h3>
+          <p>Tracing model behavior and measuring quality, latency, cost, errors, and citation coverage.</p>
+          <div class="tags"><span>LangSmith</span><span>Tracing</span><span>Evaluation</span><span>Structured Logs</span></div>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-num">04</span><span class="skill-icon">⌘</span>
+          <h3>Product Engineering</h3>
+          <p>Full-stack delivery with a layered backend, modern frontend, persistent data, and automated tests.</p>
+          <div class="tags"><span>Python</span><span>FastAPI</span><span>Next.js</span><span>PostgreSQL</span><span>TypeScript</span></div>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-num">05</span><span class="skill-icon">△</span>
+          <h3>Cloud & Delivery</h3>
+          <p>Containerized workloads, infrastructure as code, GitOps, and reliable deployment workflows.</p>
+          <div class="tags"><span>AWS</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>Argo CD</span></div>
+        </article>
+      </div>
+    </section>
 
-				<div class="col-md-4 col-sm-6">
-					<div class="card">
-						<div class="front">
-							<img class="card-img-top" src="./assets/work-project-img/cactus.png" alt="cactus-website" />
-						</div>
-						<div class="back">
-							<a class="btn btn-primary btn-custom card-link" target="_blank"
-								href="https://www.cactusr.com/">Visit Site</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="card">
-						<div class="front">
-							<img class="card-img-top" src="./assets/work-project-img/firsttrust.png"
-								alt="firsttrust-website" />
-						</div>
-						<div class="back">
-							<a class="btn btn-primary btn-custom card-link" target="_blank"
-								href="https://www.firsttrusthomeloans.com/">Visit Site</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<div class="card">
-						<div class="front">
-							<img class="card-img-top" src="./assets/work-project-img/jabbercom.png"
-								alt="jabbercom-website" />
-						</div>
-						<div class="back">
-							<a class="btn btn-primary btn-custom card-link" target="_blank"
-								href="https://www.jabbercomm.com/">Visit Site</a>
-						</div>
-					</div>
-				</div>
+    <section class="project section" id="project">
+      <div class="project-kicker reveal"><span>Featured build</span><span>2026</span></div>
+      <div class="project-title reveal">
+        <div><p class="eyebrow"><span></span> Enterprise AI</p><h2>AI Document<br><em>Workspace.</em></h2></div>
+        <p>A production-oriented workspace for asking grounded questions across PDFs — with agentic tools, citations, observability, and human control built in.</p>
+      </div>
+      <a class="project-visual reveal" href="https://ai-document-assistant-mauve-one.vercel.app/" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/PinkyPink213/AI-Document-Assistant/main/img/app-dark-them.png" alt="AI Document Workspace application in dark mode">
+        <span class="open-project">Open live app ↗</span>
+      </a>
+      <div class="project-details">
+        <div class="project-story reveal">
+          <h3>Not just another PDF chatbot.</h3>
+          <p>The system supports independent conversations, PDF management, filename-aware retrieval, reranked sources, persistent history, academic search, and approval before destructive actions.</p>
+          <div class="actions">
+            <a class="button primary" href="https://ai-document-assistant-mauve-one.vercel.app/" target="_blank" rel="noreferrer">Try live demo ↗</a>
+            <a class="button ghost light" href="https://github.com/PinkyPink213/AI-Document-Assistant" target="_blank" rel="noreferrer">View code ↗</a>
+          </div>
+        </div>
+        <div class="feature-list reveal">
+          <div><span>01</span><p><strong>Agentic workflow</strong>LangGraph tools and durable human-in-the-loop checkpoints.</p></div>
+          <div><span>02</span><p><strong>Grounded answers</strong>Qdrant retrieval, reranking, and page-level citations.</p></div>
+          <div><span>03</span><p><strong>Production visibility</strong>LangSmith traces, structured logs, health monitoring, and rate limits.</p></div>
+          <div><span>04</span><p><strong>Full-stack quality</strong>FastAPI, Next.js, PostgreSQL, Docker, Pytest, and Vitest.</p></div>
+        </div>
+      </div>
+    </section>
 
-				<div class="col-md-4 col-sm-6">
-					<div class="card">
-						<div class="front">
-							<img class="card-img-top" src="./assets/work-project-img/protec.png" alt="protec-website" />
-						</div>
-						<div class="back">
-							<a class="btn btn-primary btn-custom card-link" target="_blank"
-								href="http://www.protec.build/">Visit Site</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section class="research section" id="research">
+      <div class="section-heading reveal">
+        <div><div class="section-label">05 / Research</div><h2>Research that<br>connects the dots.</h2></div>
+        <p>Graph learning applied to a real environmental forecasting problem.</p>
+      </div>
+      <article class="paper reveal">
+        <div class="paper-meta"><span>Published research</span><span>Springer CCIS · 2025</span></div>
+        <h3>A Graph-based System for PM2.5 Prediction</h3>
+        <p>A hybrid DCRNN–GraphSAGE model for learning spatio-temporal dependencies and improving 24-hour multistep air-quality forecasting.</p>
+        <a href="https://link.springer.com/chapter/10.1007/978-981-96-6291-3_1" target="_blank" rel="noreferrer">Read the publication <span>↗</span></a>
+      </article>
+      <div class="credentials reveal">
+        <div><span>Credential 01</span><h3>AWS Solutions Architect — Associate</h3><a href="https://www.credly.com/badges/2f9c76af-0014-42af-8b6e-007ee4116517/public_url" target="_blank" rel="noreferrer">Verify ↗</a></div>
+        <div><span>Credential 02</span><h3>Certified Kubernetes Administrator</h3><a href="https://www.credly.com/badges/6ff27141-3895-445c-8af2-27c8fe86261a/public_url" target="_blank" rel="noreferrer">Verify ↗</a></div>
+      </div>
+    </section>
 
-	<section class="contact" id="contact">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-12 text-center d-flex flex-column justify-content-center align-items-center">
-					<p class="sub-title">Get In Touch</p>
-					<h2>Contact Me</h2>
-					<div class="card">
-						<div class="card-body d-flex justify-content-center flex-wrap">
-							<div
-								class="d-flex align-items-center justify-content-sm-center justify-content-start email-link">
-								<i class="bi bi-envelope-fill"></i>
-								<a class="m-0 p-1" href="mailto: Isariyas213@gmail.com">Isariyas213@gmail.com</a>
-							</div>
-							<div class="d-flex align-items-center justify-content-sm-center justify-content-start">
-								<i class="bi bi-linkedin"></i>
-								<a class="m-0 p-1" href="https://www.linkedin.com/in/isariya-sirivejabandhu-248256291"
-									target="_blank">LinkedIn</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="bottom-svg">
-			<path fill="#000000" fill-opacity="1"
-				d="M0,224L48,186.7C96,149,192,75,288,74.7C384,75,480,149,576,197.3C672,245,768,267,864,245.3C960,224,1056,160,1152,154.7C1248,149,1344,203,1392,229.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-			</path>
-		</svg>
-		<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#000000" fill-opacity="1" d="M0,288L0,96L84.7,96L84.7,192L169.4,192L169.4,288L254.1,288L254.1,64L338.8,64L338.8,128L423.5,128L423.5,224L508.2,224L508.2,288L592.9,288L592.9,96L677.6,96L677.6,160L762.4,160L762.4,288L847.1,288L847.1,96L931.8,96L931.8,256L1016.5,256L1016.5,224L1101.2,224L1101.2,288L1185.9,288L1185.9,192L1270.6,192L1270.6,96L1355.3,96L1355.3,224L1440,224L1440,320L1355.3,320L1355.3,320L1270.6,320L1270.6,320L1185.9,320L1185.9,320L1101.2,320L1101.2,320L1016.5,320L1016.5,320L931.8,320L931.8,320L847.1,320L847.1,320L762.4,320L762.4,320L677.6,320L677.6,320L592.9,320L592.9,320L508.2,320L508.2,320L423.5,320L423.5,320L338.8,320L338.8,320L254.1,320L254.1,320L169.4,320L169.4,320L84.7,320L84.7,320L0,320L0,320Z"></path>
-    </svg> -->
-	</section>
-	<footer id="footer">
-		<div class="bottom-footer">
-			<div class="container">
-				<div class="row d-flex align-items-center justify-content-center flex-wrap text-center">
-					<div class="col-md-12">
-						<p class="m-0 p-2">
-							CopyRight &copy;2023 Pink Portfolio&nbsp;<br class="d-block d-sm-none" />All Rights
-							Reserved.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<a id="up-button"><i class="bi bi-caret-up-fill"></i></a>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-		crossorigin="anonymous"></script>
-	<script src="./script/script.js"></script>
+    <section class="contact section" id="contact">
+      <p class="eyebrow reveal"><span></span> Have a role or idea in mind?</p>
+      <h2 class="reveal">Let’s build something<br><em>intelligent.</em></h2>
+      <a class="email reveal" href="mailto:Isariyas213@gmail.com">Isariyas213@gmail.com <span>↗</span></a>
+      <div class="contact-bottom">
+        <p>Based in Bangkok, Thailand · Open to global opportunities</p>
+        <div><a href="https://github.com/PinkyPink213" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/isariya-sirivejabandhu-248256291" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#top"><span>P</span>INK.</a><p>Designed & built with care · <span id="year"></span></p></footer>
 </body>
-
 </html>
