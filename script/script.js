@@ -1,6 +1,7 @@
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('#site-nav');
 const readingProgress = document.querySelector('.reading-progress');
+const backToTop = document.querySelector('.back-to-top');
 
 function updateReadingProgress() {
   const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -14,6 +15,18 @@ function updateReadingProgress() {
 window.addEventListener('scroll', updateReadingProgress, { passive: true });
 window.addEventListener('resize', updateReadingProgress);
 updateReadingProgress();
+
+function updateBackToTop() {
+  backToTop?.classList.toggle('visible', window.scrollY > 500);
+}
+
+window.addEventListener('scroll', updateBackToTop, { passive: true });
+updateBackToTop();
+
+backToTop?.addEventListener('click', () => {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+});
 
 menuButton?.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
