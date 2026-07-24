@@ -1,5 +1,19 @@
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('#site-nav');
+const readingProgress = document.querySelector('.reading-progress');
+
+function updateReadingProgress() {
+  const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollableHeight > 0
+    ? Math.min(Math.max(window.scrollY / scrollableHeight, 0), 1)
+    : 0;
+
+  readingProgress?.style.setProperty('transform', `scaleX(${progress})`);
+}
+
+window.addEventListener('scroll', updateReadingProgress, { passive: true });
+window.addEventListener('resize', updateReadingProgress);
+updateReadingProgress();
 
 menuButton?.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
