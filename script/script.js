@@ -15,6 +15,23 @@ nav?.querySelectorAll('a').forEach((link) => {
   });
 });
 
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && nav?.classList.contains('open')) {
+    nav.classList.remove('open');
+    menuButton?.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
+    menuButton?.focus();
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1180 && nav?.classList.contains('open')) {
+    nav.classList.remove('open');
+    menuButton?.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
+  }
+});
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
